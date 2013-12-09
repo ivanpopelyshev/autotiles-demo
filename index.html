@@ -7,32 +7,30 @@
 	<script src="lib/jquery-ui-1.10.3.custom.min.js"></script>
 	<!-- GAME -->
 	<script src="core/tilelist.js"></script>
-	<script src="core2/tileeventlist.js"></script>
+	<script src="core/tileeventlist.js"></script>
 	<script src="core/map.js"></script>
 	<script src="core/sprite.js"></script>
-	<script src="core2/editor.js"></script>
+	<script src="core/editor.js"></script>
 	<script src="core/renderer.js"></script>
 	<script src="core/binder.js"></script>
 	<!-- MODS -->
 	<script src="mods/mod-shadows.js"></script>
 	<script src="mods/mod-abyss.js"></script>
 	<script src="mods/mod-surface.js"></script>
-	<script src="mods/mod-redstone.js"></script>
 	<!-- CONFIGURATION -->
 	<script src="cfg/basic.js"></script>
 	<script src="cfg/shadows.js"></script>
 	<script src="cfg/abyss.js"></script>
 	<script src="cfg/surface.js"></script>
-	<script src="cfg/redstone.js"></script>
 	<!-- UI -->	
 	<script src="core/builder.js"></script>
 	<script src="core/main.js"></script>
 	<!-- Application -->	
-	<script src="core2/app.js"></script>
+	<script src="core/app.js"></script>
 	<script>
 $(function() {
 	initUI();
-	window.app = new App([BasicConfig, ShadowConfig, AbyssConfig, SurfaceConfig, /*RedstoneConfig*/]);
+	window.app = new App([BasicConfig, ShadowConfig, AbyssConfig, SurfaceConfig]);
 });
 
 function initUI() {		
